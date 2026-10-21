@@ -1,0 +1,11 @@
+Test,Result,Verdict
+MMM v2: true ROI inside 90% interval (≥5 of 6),3 of 6,FAIL
+"MMM v2: ranking Spearman ≥0.8, top and bottom correct",ρ = 0.14,FAIL
+MMM v2: holdout MAPE < 10%,3.2%,PASS
+"MMM v2: marginal-ROI ranking (added check, not pre-registered)",ρ = 0.09,FAIL
+Geo experiment: truth inside 90% CI,1.11 vs 1.12,PASS
+CLV: mean absolute error < 10%,2.0%,PASS
+Fraud detector: precision@k,100%,—
+Checkout test: truth inside 95% CI,+0.34 vs +0.27 pp,PASS
+Budget recommendation: share of best possible gain captured,100%,—
+Budget recommendation: predicted gain vs true gain,₹10.1 vs ₹5.9 Cr,OVERSTATED
