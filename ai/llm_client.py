@@ -55,6 +55,25 @@ def _clean(messages):
     return out
 
 
+def _recover_final_answer(err, tools):
+    """gpt-oss sometimes emits its FINAL answer as a call to a tool named 'json' (not in our tool list); Groq then
+    answers 400 tool_use_failed and includes what the model wrote. If the call was to an unlisted tool and its
+    arguments are valid JSON, treat the arguments as the model's plain-text final answer. Real tool names are never
+    recovered this way, and nothing is invented: the content is exactly what the model produced."""
+    body = getattr(err, "body", None)
+    err_obj = body.get("error", body) if isinstance(body, dict) else {}
+    if err_obj.get("code") != "tool_use_failed" or not err_obj.get("failed_generation"):
+        return None
+    try:
+        gen = json.loads(err_obj["failed_generation"])
+    except (json.JSONDecodeError, TypeError):
+        return None
+    listed = {t["function"]["name"] for t in (tools or [])}
+    if not isinstance(gen, dict) or gen.get("name") in listed or not isinstance(gen.get("arguments"), dict):
+        return None
+    return json.dumps(gen["arguments"])
+
+
 def _available():
     from openai import OpenAI
     out = []
@@ -129,6 +148,16 @@ def chat(messages, tools=None, pinned=None, use_cache=True, temperature=0, run_i
                 wait = min(wait * 2, 60)
             except (APIStatusError, APIError) as e:
                 last_err = e
+                rec = _recover_final_answer(e, tools)
+                if rec is not None:              # model "called" a non-existent tool such as `json` to hand in its answer
+                    msg = {"role": "assistant", "content": rec, "tool_calls": []}
+                    usage = {"prompt_tokens": 0, "completion_tokens": 0, "latency_s": round(time.time() - t0, 2)}
+                    _log({"ts": time.strftime("%Y-%m-%d %H:%M:%S"), "run_id": run_id, "provider": name, "model": model,
+                          **usage, "note": "recovered_json_tool_call"})
+                    if use_cache:
+                        CACHE_DIR.mkdir(parents=True, exist_ok=True)
+                        cache_file.write_text(json.dumps({"message": msg, "provider": name, "usage": usage}))
+                    return msg, name, usage
                 break
     raise RuntimeError(f"All providers failed. Last error: {str(last_err)[:300]}")
 
