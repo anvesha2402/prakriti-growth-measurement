@@ -25,6 +25,7 @@ _Table and chart added in Phase 6._
 ## Repository map
 | Folder | Contents |
 | --- | --- |
+| `generator/` | `prakriti_world.py`: the documented data-generating process (ranges public, draw secret) |
 | `data/generated/` | weekly_geo, platform_reported, customers, orders, cro_sessions, influencers |
 | `sealed/` | `HASH.txt` (committed at sealing) and `truth.json` (committed only after grading) |
 | `preregistration/` | Experiment design and analysis plan, committed before stage 2 |
