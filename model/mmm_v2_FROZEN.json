@@ -1,0 +1,8 @@
+{
+ "frozen_files": {
+  "mmm_v2_diagnostics.csv": "2eddd0f9d13c9f9d7101303655971a912dad2769e361a5a7fa79f34ac5feeee8",
+  "mmm_v2_posterior_params.npz": "7a9dc8f2ef266efdfafed3821a692f87071934a24da97ef56951be13ec749afa",
+  "mmm_v2_response_curves.csv": "d67a74d09a1aaf1ac89d395045cfb0f3d08aacfb7c88f4742467037a316200fd",
+  "mmm_v2_roi.csv": "1a8d4e039a2682a9edc09eadb04e7d1324051e601a998699a234268feca75b82"
+ }
+}
