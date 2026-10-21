@@ -1,6 +1,5 @@
 .env
 .streamlit/secrets.toml
-sealed/truth.json
 *.nc
 traces/
 __pycache__/
