@@ -1,0 +1,30 @@
+{
+ "design": {
+  "channel": "qc_ads",
+  "treated_geos": [
+   "Bengaluru",
+   "Hyderabad"
+  ],
+  "weeks": [
+   88,
+   95
+  ]
+ },
+ "metric": "rev_quick_commerce_lakh",
+ "alpha": 0.05,
+ "power_target": 0.8,
+ "fit_weeks": 26,
+ "noise_se_lakh_per_week": 0.142,
+ "mde_lakh_per_week": 0.397,
+ "mde_roi": 0.076,
+ "mde_pct_of_qc_sales": 0.0113,
+ "expected_spend_withheld_lakh": 42.01,
+ "power_at_mmm_v1_median": 1.0,
+ "twin_weights": {
+  "Ahmedabad": 0.65,
+  "Delhi NCR": 0.267,
+  "Kolkata": 0.587,
+  "Pune": 1.271
+ },
+ "placebo_windows": 54
+}

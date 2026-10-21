@@ -1,0 +1,11 @@
+{
+ "channel": "qc_ads",
+ "treated_geos": [
+  "Bengaluru",
+  "Hyderabad"
+ ],
+ "weeks": [
+  88,
+  95
+ ]
+}
