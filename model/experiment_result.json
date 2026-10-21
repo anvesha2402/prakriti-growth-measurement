@@ -1,0 +1,31 @@
+{
+ "channel": "qc_ads",
+ "treated_geos": [
+  "Bengaluru",
+  "Hyderabad"
+ ],
+ "weeks": [
+  88,
+  95
+ ],
+ "valid": true,
+ "effect_lakh_per_week": -5.4419,
+ "se_lakh_per_week": 0.1416,
+ "p_value": 0.0,
+ "effect_pct": -0.1599,
+ "did_pct": -0.1586,
+ "spend_withheld_lakh": 39.35,
+ "revenue_lost_lakh": 43.536,
+ "roi": 1.1064,
+ "roi_ci90": [
+  1.059,
+  1.1537
+ ],
+ "roi_ci95": [
+  1.0499,
+  1.1628
+ ],
+ "carry_over_included": false,
+ "secondary_total_revenue_effect_lakh_per_week": -5.7179,
+ "decision": "Reduce: QC ads add sales but lose contribution at today's spend (break-even ROI \u2248 3.3). Cut toward marginal ROI = 3.3."
+}

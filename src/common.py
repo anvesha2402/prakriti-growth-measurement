@@ -6,6 +6,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 STAGE1 = ROOT / "data" / "generated" / "stage1"
+FULL = ROOT / "data" / "generated" / "full"          # weeks 1-104, after the experiment
 FIG = ROOT / "reports" / "figures"
 FIG.mkdir(parents=True, exist_ok=True)
 
