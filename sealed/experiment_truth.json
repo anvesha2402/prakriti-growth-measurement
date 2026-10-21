@@ -1,0 +1,24 @@
+{
+ "design": {
+  "channel": "qc_ads",
+  "treated_geos": [
+   "Bengaluru",
+   "Hyderabad"
+  ],
+  "weeks": [
+   88,
+   95
+  ]
+ },
+ "true_revenue_lost_in_treated_geos_lakh": 42.89,
+ "true_spend_withheld_lakh": 38.316,
+ "true_test_roi": 1.119361,
+ "true_roi_weeks_1_104_realised": {
+  "meta": 1.666088,
+  "search": 0.89789,
+  "youtube": 2.457738,
+  "qc_ads": 1.437845,
+  "influencer": 1.917496,
+  "trade_promo": 1.24412
+ }
+}

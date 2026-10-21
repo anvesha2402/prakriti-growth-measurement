@@ -1,0 +1,188 @@
+{
+ "generator_version": "1.0.0",
+ "seed": 6838571973416165770,
+ "channels": {
+  "meta": {
+   "roi": 1.719017,
+   "half_life": 1.967504,
+   "k_rel": 0.460421,
+   "s": 1.209198,
+   "platform_bias": 2.611859,
+   "lambda": 0.703071,
+   "beta": 33.613787,
+   "true_roi_weeks_1_87": 1.719017,
+   "true_roi_weeks_1_104_no_test": 1.666088,
+   "true_mroi_year2": 0.449325,
+   "true_contribution_weeks_1_87_lakh": 2048.101
+  },
+  "search": {
+   "roi": 0.91532,
+   "half_life": 0.382386,
+   "k_rel": 0.896155,
+   "s": 1.102618,
+   "platform_bias": 3.242481,
+   "lambda": 0.163215,
+   "beta": 14.447615,
+   "true_roi_weeks_1_87": 0.91532,
+   "true_roi_weeks_1_104_no_test": 0.89789,
+   "true_mroi_year2": 0.392426,
+   "true_contribution_weeks_1_87_lakh": 626.933
+  },
+  "youtube": {
+   "roi": 2.455784,
+   "half_life": 4.788743,
+   "k_rel": 2.020605,
+   "s": 2.338346,
+   "platform_bias": 0.606891,
+   "lambda": 0.865243,
+   "beta": 120.604288,
+   "true_roi_weeks_1_87": 2.455784,
+   "true_roi_weeks_1_104_no_test": 2.457738,
+   "true_mroi_year2": 4.095738,
+   "true_contribution_weeks_1_87_lakh": 1765.959
+  },
+  "qc_ads": {
+   "roi": 1.515407,
+   "half_life": 0.580972,
+   "k_rel": 0.664405,
+   "s": 1.223331,
+   "cannibalisation": 0.642628,
+   "multi_touch": 1.038404,
+   "lambda": 0.303285,
+   "beta": 31.034112,
+   "true_roi_weeks_1_87": 1.515407,
+   "true_roi_weeks_1_104_no_test": 1.428892,
+   "true_mroi_year2": 0.501581,
+   "true_contribution_weeks_1_87_lakh": 1567.757
+  },
+  "influencer": {
+   "roi": 1.919822,
+   "half_life": 2.486886,
+   "k_rel": 1.448844,
+   "s": 1.457915,
+   "platform_bias": 1.517923,
+   "newer_geo_mult": 1.429732,
+   "lambda": 0.756751,
+   "beta": 26.825351,
+   "true_roi_weeks_1_87": 1.919822,
+   "true_roi_weeks_1_104_no_test": 1.917496,
+   "true_mroi_year2": 1.46872,
+   "true_contribution_weeks_1_87_lakh": 878.742
+  },
+  "trade_promo": {
+   "roi": 1.288373,
+   "half_life": 0.40541,
+   "k_rel": 0.973498,
+   "s": 1.050597,
+   "pull_forward": 0.441939,
+   "platform_bias": 1.145447,
+   "lambda": 0.180912,
+   "beta": 34.382992,
+   "true_roi_weeks_1_87": 1.288373,
+   "true_roi_weeks_1_104_no_test": 1.24412,
+   "true_mroi_year2": 0.518196,
+   "true_contribution_weeks_1_87_lakh": 707.79
+  }
+ },
+ "view_through": 1.653811,
+ "influencer_fake_creators": [
+  "IN004",
+  "IN026",
+  "IN057",
+  "IN060",
+  "IN061",
+  "IN062",
+  "IN069",
+  "IN087",
+  "IN088",
+  "IN099",
+  "IN108",
+  "IN118",
+  "IN143"
+ ],
+ "influencer_fake_spend_share": 0.04657,
+ "customers": {
+  "organic": {
+   "lam": 0.040146,
+   "p": 0.300056,
+   "aov": 658.101673,
+   "disc": 0.049468,
+   "yield_": 1.0
+  },
+  "meta": {
+   "lam": 0.030701,
+   "p": 0.316489,
+   "aov": 658.952024,
+   "disc": 0.088693,
+   "yield_": 0.952035
+  },
+  "search": {
+   "lam": 0.038096,
+   "p": 0.295383,
+   "aov": 649.453983,
+   "disc": 0.058837,
+   "yield_": 1.077553
+  },
+  "youtube": {
+   "lam": 0.039485,
+   "p": 0.234298,
+   "aov": 654.587409,
+   "disc": 0.058473,
+   "yield_": 0.739217
+  },
+  "influencer": {
+   "lam": 0.044516,
+   "p": 0.218649,
+   "aov": 684.763561,
+   "disc": 0.053726,
+   "yield_": 1.150645
+  },
+  "trade_promo": {
+   "lam": 0.023811,
+   "p": 0.478198,
+   "aov": 573.416499,
+   "disc": 0.202265,
+   "yield_": 1.538604
+  }
+ },
+ "true_new_website_customers_by_channel_weeks_1_104": {
+  "organic": 176470,
+  "meta": 36319,
+  "search": 12770,
+  "youtube": 23895,
+  "influencer": 19597,
+  "trade_promo": 13942
+ },
+ "cro": {
+  "base_conversion": 0.032444,
+  "true_abs_lift": 0.002654
+ },
+ "baseline_share_of_revenue_year2": 0.592522,
+ "true_clv_by_channel": {
+  "organic": {
+   "clv_12m_inr": 651.6,
+   "clv_24m_inr": 841.8
+  },
+  "meta": {
+   "clv_12m_inr": 554.2,
+   "clv_24m_inr": 726.2
+  },
+  "search": {
+   "clv_12m_inr": 615.9,
+   "clv_24m_inr": 800.2
+  },
+  "youtube": {
+   "clv_12m_inr": 655.5,
+   "clv_24m_inr": 883.4
+  },
+  "influencer": {
+   "clv_12m_inr": 756.0,
+   "clv_24m_inr": 1027.7
+  },
+  "trade_promo": {
+   "clv_12m_inr": 358.2,
+   "clv_24m_inr": 442.3
+  }
+ },
+ "sealed_at_utc": "2026-10-21T09:58:18+00:00"
+}
