@@ -1,0 +1,40 @@
+{
+ "budget_cr": 24.0,
+ "bounds": "\u00b150% of current weekly spend",
+ "objective": "CLV-adjusted contribution (MMM v2 + notebook 05)",
+ "current_cr": {
+  "Meta": 8.4,
+  "Quick-commerce ads": 8.306,
+  "Google Search": 5.045,
+  "Trade promotions": 4.364,
+  "YouTube": 4.025,
+  "Influencers": 3.356
+ },
+ "optimised_cr": {
+  "Meta": 4.2,
+  "Quick-commerce ads": 4.153,
+  "Google Search": 2.522,
+  "Trade promotions": 2.182,
+  "YouTube": 6.038,
+  "Influencers": 4.905
+ },
+ "pro_rata_cr": {
+  "Meta": 6.018,
+  "Quick-commerce ads": 5.951,
+  "Google Search": 3.615,
+  "Trade promotions": 3.127,
+  "YouTube": 2.884,
+  "Influencers": 2.405
+ },
+ "expected_gain_vs_pro_rata_cr": {
+  "median": 10.056,
+  "p5": 6.891,
+  "p95": 12.943
+ },
+ "robust_channels": [
+  "Meta",
+  "Quick-commerce ads",
+  "Trade promotions",
+  "YouTube"
+ ]
+}
