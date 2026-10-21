@@ -1,0 +1,10 @@
+.env
+.streamlit/secrets.toml
+sealed/truth.json
+*.nc
+traces/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+ai/eval/cache/
+data/dev/
